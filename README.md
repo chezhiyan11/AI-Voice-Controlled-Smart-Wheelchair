@@ -1,2 +1,477 @@
-# AI-Voice-Controlled-Smart-Wheelchair
-An AI-powered autonomous smart wheelchair using Raspberry Pi, ESP32, Vosk Speech Recognition, OpenCV, TensorFlow and IoT for voice-based navigation and obstacle avoidance.
+<div align="center">
+
+# ♿ AI-Powered Intelligent Voice-Controlled Smart Wheelchair
+
+### Empowering Mobility Through Artificial Intelligence, Embedded Systems & IoT
+
+<img src="Images/cover.png" width="100%"/>
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4-red?style=for-the-badge&logo=raspberrypi)
+![ESP32](https://img.shields.io/badge/ESP32-IoT-orange?style=for-the-badge)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?style=for-the-badge&logo=tensorflow)
+![Vosk](https://img.shields.io/badge/Vosk-Speech%20Recognition-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
+---
+
+### 🚀 AI • Embedded Systems • Computer Vision • Speech Recognition • IoT
+
+</div>
+
+---
+
+# 📖 Overview
+
+Millions of people worldwide experience mobility challenges due to paralysis, lower-limb disabilities, and visual impairments. Traditional wheelchairs require manual effort or expensive automation, making independent movement difficult.
+
+This project introduces an **AI-powered intelligent wheelchair** capable of understanding **voice commands**, detecting **real-time obstacles**, and making **autonomous navigation decisions** using **Artificial Intelligence, Computer Vision, and Embedded Systems**.
+
+The wheelchair processes offline speech commands using **Vosk Speech Recognition**, identifies surrounding objects through **OpenCV + TensorFlow**, and communicates with an **ESP32 motor controller** to execute safe movement.
+
+The objective is to provide a **low-cost**, **accessible**, and **intelligent mobility solution** that significantly improves independence and quality of life.
+
+---
+
+# 🎯 Project Highlights
+
+✅ Offline Voice Recognition
+
+✅ AI-Based Navigation
+
+✅ Vision-Based Obstacle Detection
+
+✅ Autonomous Decision Making
+
+✅ Embedded Motor Control
+
+✅ Raspberry Pi + ESP32 Integration
+
+✅ IoT Communication
+
+✅ Affordable Assistive Technology
+
+---
+
+# ✨ Key Features
+
+🎙 **Voice Controlled Navigation**
+
+- Forward
+- Backward
+- Left
+- Right
+- Stop
+
+---
+
+🧠 **Offline Speech Recognition**
+
+- Vosk Speech Recognition
+- Speech-to-Text Conversion
+- Keyword Spotting
+- Low Latency
+- No Internet Required
+
+---
+
+👁 **Computer Vision**
+
+- OpenCV
+- TensorFlow
+- MobileNet SSD
+- Object Detection
+- Path Identification
+- Obstacle Recognition
+
+---
+
+🚧 **Obstacle Detection**
+
+- Ultrasonic Sensors
+- IR Sensors
+- Real-Time Distance Measurement
+- Automatic Collision Avoidance
+
+---
+
+⚙ **Embedded Control**
+
+- ESP32
+- UART Communication
+- Raspberry Pi GPIO
+- Motor Driver Control
+
+---
+
+🔋 **Smart Navigation**
+
+- AI Decision Making
+- Autonomous Path Selection
+- Safe Turning
+- Emergency Stop
+
+---
+
+# 🏗 System Architecture
+
+```
+                 Voice Command
+                       │
+                       ▼
+            ReSpeaker 2-Mic HAT
+                       │
+                       ▼
+           Vosk Speech Recognition
+                       │
+                       ▼
+            Raspberry Pi 4 Controller
+               │               │
+               │               │
+               ▼               ▼
+        Computer Vision     Voice Command
+     (OpenCV + TensorFlow)
+               │
+               ▼
+      AI Decision Algorithm
+               │
+               ▼
+         UART Communication
+               │
+               ▼
+              ESP32
+               │
+               ▼
+         L298N Motor Driver
+               │
+               ▼
+        BO Motors (Movement)
+```
+
+---
+
+# 🧠 AI Workflow
+
+```
+Camera Input
+
+      │
+
+      ▼
+
+OpenCV
+
+      │
+
+      ▼
+
+MobileNet SSD
+
+      │
+
+      ▼
+
+Object Detection
+
+      │
+
+      ▼
+
+Obstacle Analysis
+
+      │
+
+      ▼
+
+AI Decision Making
+
+      │
+
+      ▼
+
+Safe Navigation
+```
+
+---
+
+# 🎤 Voice Recognition Pipeline
+
+```
+Microphone
+
+     │
+
+     ▼
+
+Audio Capture
+
+     │
+
+     ▼
+
+Vosk Speech Recognition
+
+     │
+
+     ▼
+
+Speech-to-Text
+
+     │
+
+     ▼
+
+Keyword Spotting
+
+     │
+
+     ▼
+
+Movement Command
+
+     │
+
+     ▼
+
+Motor Driver
+
+     │
+
+     ▼
+
+Wheelchair Movement
+```
+
+---
+
+# 🛠 Hardware Components
+
+| Component | Purpose |
+|------------|-----------|
+| Raspberry Pi 4 | Main AI Processing Unit |
+| ESP32 | Motor Controller |
+| ReSpeaker 2-Mic HAT | Voice Input |
+| Raspberry Pi Camera Module 3 NoIR | Computer Vision |
+| Ultrasonic Sensors | Obstacle Detection |
+| IR Sensors | Short Range Detection |
+| L298N Motor Driver | Motor Control |
+| BO Motors | Wheelchair Movement |
+| Battery Pack | Power Supply |
+| Voltage Regulator | Stable Power |
+
+---
+
+# 💻 Software Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| Python | AI Programming |
+| OpenCV | Computer Vision |
+| TensorFlow | Deep Learning |
+| MobileNet SSD | Object Detection |
+| Vosk | Offline Speech Recognition |
+| Arduino IDE | ESP32 Programming |
+| Raspberry Pi OS | Embedded Operating System |
+| UART | Communication |
+| GPIO | Hardware Interface |
+
+---
+
+# 📂 Repository Structure
+
+```
+AI-Voice-Controlled-Smart-Wheelchair
+
+│
+
+├── Images/
+
+├── Hardware/
+
+├── Software/
+
+│      ├── RaspberryPi/
+
+│      ├── ESP32/
+
+│
+
+├── AI_Model/
+
+├── Documentation/
+
+├── Demo/
+
+├── README.md
+
+├── requirements.txt
+
+└── LICENSE
+```
+
+---
+
+# 🚀 Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/yourusername/AI-Voice-Controlled-Smart-Wheelchair.git
+```
+
+Move to Project
+
+```bash
+cd AI-Voice-Controlled-Smart-Wheelchair
+```
+
+Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run
+
+```bash
+python main.py
+```
+
+---
+
+# 🎮 Voice Commands
+
+| Voice Command | Action |
+|---------------|--------|
+| Forward | Move Forward |
+| Backward | Move Backward |
+| Left | Turn Left |
+| Right | Turn Right |
+| Stop | Stop Movement |
+
+---
+
+# 📊 Working Principle
+
+1. User speaks a voice command.
+
+2. ReSpeaker captures the speech.
+
+3. Vosk converts speech into text.
+
+4. Raspberry Pi interprets the command.
+
+5. Camera continuously detects obstacles.
+
+6. AI analyzes surroundings.
+
+7. Raspberry Pi sends movement instructions.
+
+8. ESP32 controls motors.
+
+9. Wheelchair moves safely.
+
+---
+
+# 📸 Project Demonstration
+
+## Prototype
+
+<img src="Images/prototype.jpg"/>
+
+---
+
+## Hardware Setup
+
+<img src="Images/hardware.jpg"/>
+
+---
+
+## Block Diagram
+
+<img src="Images/blockdiagram.png"/>
+
+---
+
+## AI Navigation
+
+<img src="Images/navigation.png"/>
+
+---
+
+## Obstacle Detection
+
+<img src="Images/obstacle_detection.png"/>
+
+---
+
+# 📈 Results
+
+✔ Successful Offline Speech Recognition
+
+✔ Real-Time Object Detection
+
+✔ Autonomous Navigation
+
+✔ Embedded Motor Control
+
+✔ Low Latency Response
+
+✔ Collision Avoidance
+
+✔ Affordable Smart Mobility Solution
+
+---
+
+# 🔮 Future Enhancements
+
+- YOLOv11 Object Detection
+- SLAM Navigation
+- GPS Tracking
+- Android Application
+- Emergency SOS
+- Health Monitoring
+- Cloud Connectivity
+- Face Recognition
+- Voice Authentication
+- Indoor Mapping
+
+---
+
+# 🤝 Contributors
+
+| Name |
+|------|
+| Chezhiyan M |
+| Anish S |
+| Subramanian M |
+| Adithya R |
+
+---
+
+# 🏆 Achievements
+
+🏅 Developed for **Unisys Innovation Program**
+
+🏅 AI-Based Embedded Healthcare Innovation
+
+🏅 Real-Time Computer Vision Application
+
+🏅 Assistive Technology Prototype
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+## ⭐ If you like this project, consider giving it a Star!
+
+Made with ❤️ by **Chezhiyan M & Team**
+
+</div>
