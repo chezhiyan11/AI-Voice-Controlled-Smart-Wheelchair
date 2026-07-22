@@ -179,43 +179,72 @@ The objective is to provide a **low-cost**, **accessible**, and **intelligent mo
 # 🧠 AI Workflow
 
 ```
-Camera Input
-
-      │
-
-      ▼
-
-OpenCV
-
-      │
-
-      ▼
-
-MobileNet SSD
-
-      │
-
-      ▼
-
-Object Detection
-
-      │
-
-      ▼
-
-Obstacle Analysis
-
-      │
-
-      ▼
-
-AI Decision Making
-
-      │
-
-      ▼
-
-Safe Navigation
+┌────────────────────────────────────────────┐
+│         Camera Module 3 NoIR               │
+│      Real-Time Video Frame Capture         │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│         Frame Acquisition                  │
+│ • Continuous Image Capture                 │
+│ • Video Stream Generation                  │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      Image Preprocessing (OpenCV)          │
+│ • Resize Frames                            │
+│ • Noise Reduction                          │
+│ • Image Enhancement                        │
+│ • Frame Normalization                      │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│     Deep Learning Inference                │
+│         MobileNet SSD                      │
+│ • Object Detection                         │
+│ • Object Classification                    │
+│ • Confidence Estimation                    │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│       Environment Analysis                 │
+│ • Obstacle Localization                    │
+│ • Free Path Identification                 │
+│ • Safe Zone Detection                      │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│       AI Decision Engine                   │
+│ • Path Planning                            │
+│ • Collision Avoidance                      │
+│ • Movement Decision                        │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      Navigation Command Generation         │
+│ • Forward                                  │
+│ • Left                                     │
+│ • Right                                    │
+│ • Stop                                     │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│        ESP32 Motor Controller              │
+│ • Motion Execution                         │
+│ • PWM Motor Control                        │
+└────────────────────────────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│       Autonomous Wheelchair Movement       │
+└────────────────────────────────────────────┘
 ```
 
 ---
