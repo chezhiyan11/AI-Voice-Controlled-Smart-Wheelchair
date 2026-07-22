@@ -446,7 +446,7 @@ python main.py
 
 ## Prototype
 
-<img src="Images/prototype.jpg"/>
+<img src="images.Prototype visualization.png"/>
 
 ---
 
