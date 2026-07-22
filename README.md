@@ -4,7 +4,7 @@
 
 ### Empowering Mobility Through Artificial Intelligence, Embedded Systems & IoT
 
-<img src="images/image" width="100%"/>
+<img src="images/banner.png" width="100%"/>
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4-red?style=for-the-badge&logo=raspberrypi)
