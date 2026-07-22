@@ -385,7 +385,7 @@ AI-Voice-Controlled-Smart-Wheelchair
 Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Voice-Controlled-Smart-Wheelchair.git
+git clone https://github.com/chezhiyan11/AI-Voice-Controlled-Smart-Wheelchair.git
 ```
 
 Move to Project
@@ -450,29 +450,12 @@ python main.py
 
 ---
 
-## Hardware Setup
-
-<img src="Images/hardware.jpg"/>
-
----
-
 ## Block Diagram
 
-<img src="Images/blockdiagram.png"/>
+<img src="images/Block Diagram.jpeg"/>
 
 ---
 
-## AI Navigation
-
-<img src="Images/navigation.png"/>
-
----
-
-## Obstacle Detection
-
-<img src="Images/obstacle_detection.png"/>
-
----
 
 # 📈 Results
 
