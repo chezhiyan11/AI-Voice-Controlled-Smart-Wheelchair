@@ -175,6 +175,7 @@ The objective is to provide a **low-cost**, **accessible**, and **intelligent mo
                                 ▼
          Forward • Backward • Left • Right • Stop
 ```
+---
 
 # 🧠 AI Workflow
 
@@ -252,49 +253,62 @@ The objective is to provide a **low-cost**, **accessible**, and **intelligent mo
 # 🎤 Voice Recognition Pipeline
 
 ```
-Microphone
+                 VOICE RECOGNITION PIPELINE
 
-     │
-
-     ▼
-
-Audio Capture
-
-     │
-
-     ▼
-
-Vosk Speech Recognition
-
-     │
-
-     ▼
-
-Speech-to-Text
-
-     │
-
-     ▼
-
-Keyword Spotting
-
-     │
-
-     ▼
-
-Movement Command
-
-     │
-
-     ▼
-
-Motor Driver
-
-     │
-
-     ▼
-
-Wheelchair Movement
+┌────────────────────────────────────────────┐
+│            User Voice Command              │
+│   (Forward / Left / Right / Stop)          │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      ReSpeaker 2-Mic HAT                   │
+│      Audio Capture & Noise Reduction       │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      Audio Preprocessing                   │
+│ • Echo Cancellation                        │
+│ • Noise Suppression                        │
+│ • Voice Signal Enhancement                 │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      Vosk Speech Recognition Engine        │
+│      Offline Speech-to-Text (STT)          │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      Command Interpretation                │
+│ • Keyword Spotting (KWS)                   │
+│ • Command Validation                       │
+│ • Intent Recognition                       │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│      AI Decision Manager                   │
+│ • Verify Safe Movement                     │
+│ • Combine Vision & Sensor Data             │
+│ • Generate Navigation Command              │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│        ESP32 Motor Controller              │
+│ • Motion Control                           │
+│ • PWM Generation                           │
+│ • Safety Override                          │
+└────────────────────┬───────────────────────┘
+                     │
+                     ▼
+┌────────────────────────────────────────────┐
+│       Autonomous Wheelchair Movement       │
+│  Forward • Left • Right • Stop             │
+└────────────────────────────────────────────┘
 ```
 
 ---
