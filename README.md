@@ -116,40 +116,65 @@ The objective is to provide a **low-cost**, **accessible**, and **intelligent mo
 
 # 🏗 System Architecture
 
+```text
+                                       USER
+                                        │
+                                        ▼
+                              Voice Command Input
+                                        │
+                                        ▼
+                          ReSpeaker 2-Mic HAT (Audio Capture)
+                                        │
+                                        ▼
+                          Raspberry Pi 4 Controller (Linux OS)
+                                        │
+            ┌───────────────────────────┴───────────────────────────┐
+            │                                                       │
+            ▼                                                       ▼
+ ┌───────────────────────────┐                        ┌────────────────────────────┐
+ │ Voice Recognition Module  │                        │ Computer Vision Module     │
+ ├───────────────────────────┤                        ├────────────────────────────┤
+ │ • Vosk Speech-to-Text     │                        │ • Camera Module 3 NoIR     │
+ │ • Keyword Spotting (KWS)  │                        │ • OpenCV                   │
+ │ • Command Parsing         │                        │ • TensorFlow               │
+ │                           │                        │ • MobileNet SSD            │
+ └───────────────┬───────────┘                        └───────────────┬────────────┘
+                 │                                                    │
+                 │                                                    │
+                 └──────────────────────┬─────────────────────────────┘
+                                        ▼
+                          ┌─────────────────────────────┐
+                          │   AI Decision Manager       │
+                          ├─────────────────────────────┤
+                          │ • Voice Command Validation  │
+                          │ • Object Detection          │
+                          │ • Path Recognition          │
+                          │ • Obstacle Avoidance        │
+                          │ • Navigation Decision       │
+                          └──────────────┬──────────────┘
+                                         │
+                                         ▼
+                         ┌──────────────────────────────┐
+                         │ ESP32 Embedded Controller    │
+                         ├──────────────────────────────┤
+                         │ • Motor Control Logic        │
+                         │ • Sensor Monitoring          │
+                         │ • PWM Generation             │
+                         │ • Safety Override            │
+                         └──────────────┬───────────────┘
+                                        │
+                ┌───────────────────────┼────────────────────────┐
+                │                       │                        │
+                ▼                       ▼                        ▼
+      Ultrasonic Sensors         IR Sensors            L298N Motor Driver
+                │                       │                        │
+                └───────────────┬───────┴───────────────┬────────┘
+                                ▼
+                       Wheelchair Motion Control
+                                │
+                                ▼
+         Forward • Backward • Left • Right • Stop
 ```
-                 Voice Command
-                       │
-                       ▼
-            ReSpeaker 2-Mic HAT
-                       │
-                       ▼
-           Vosk Speech Recognition
-                       │
-                       ▼
-            Raspberry Pi 4 Controller
-               │               │
-               │               │
-               ▼               ▼
-        Computer Vision     Voice Command
-     (OpenCV + TensorFlow)
-               │
-               ▼
-      AI Decision Algorithm
-               │
-               ▼
-         UART Communication
-               │
-               ▼
-              ESP32
-               │
-               ▼
-         L298N Motor Driver
-               │
-               ▼
-        BO Motors (Movement)
-```
-
----
 
 # 🧠 AI Workflow
 
