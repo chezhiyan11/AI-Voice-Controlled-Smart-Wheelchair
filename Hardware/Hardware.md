@@ -3,7 +3,7 @@
 The Intelligent Voice-Operated Smart Wheelchair is built using a combination of embedded computing platforms, AI peripherals, sensors, and motor control modules. Each hardware component is selected to ensure reliable real-time processing, autonomous navigation, and efficient power management.
 
 <p align="center">
-<img src="images/Hardware.png" width="850">
+<img src="images/Hardware.png">
 </p>
 
 ---
