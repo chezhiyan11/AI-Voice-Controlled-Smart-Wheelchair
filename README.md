@@ -353,11 +353,11 @@ AI-Voice-Controlled-Smart-Wheelchair
 
 │
 
-├── Images/
+├── images/
 
 ├── Hardware/
 
-├── Software/
+├── Src/
 
 │      ├── RaspberryPi/
 
@@ -365,17 +365,11 @@ AI-Voice-Controlled-Smart-Wheelchair
 
 │
 
-├── AI_Model/
-
 ├── Documentation/
 
 ├── Demo/
-
-├── README.md
-
-├── requirements.txt
-
-└── LICENSE
+ 
+└── README.md
 ```
 
 ---
