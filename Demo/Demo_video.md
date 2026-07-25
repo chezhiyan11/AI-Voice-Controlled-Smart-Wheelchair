@@ -1,1 +1,1 @@
-[![Watch the video]()](https://youtu.be/hwqatxXlKAM)
+[![Watch the video](images/Hardware.png)](https://youtu.be/hwqatxXlKAM)
